@@ -16,20 +16,22 @@ session_start();
 <br>
 <br>
         <div id="receipt">
-             <h2 style="color:white;">This is your receipt</h2> 
+             <h1 style="color:white;">This is your receipt</h1> 
 <br>
        
       <?php
             //Echo session variables that were set on previous page
             echo "Subtotal is " . $_SESSION["subtotal"]; ?>
             <br/>
-           <?php echo "Name is " . $_SESSION["user_name"]; ?>
+           <?php echo "VAT is " . $_SESSION["VAT"]; ?>
             <br/>
-           <?php echo "email is " . $_SESSION["user_email"]; ?>
+           <?php echo "Discount is " . $_SESSION["discount"]; ?>
             <br/>
             <?php echo "Total is " . $_SESSION["total"] . "."; ?>
+            
         </div>   
-
+        
+<a href="../homepage.html" class="btn btn-success">Return to Cloud Homepage</a>
    </body>
 </html>
 

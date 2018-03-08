@@ -10,19 +10,7 @@
         
       <style>
             
-       
-    button1{
     
-    
-    color: black;
-    
-}
-
-button{
-    
-    color: black;
-    
-}
 </style>
     </head>
     <body background="desk.jpeg">
@@ -30,7 +18,7 @@ button{
         <form method="POST" action="Ebus2.php">
             
             <br>
-           <h3 style="color:white;">Please Select A Product</h3>
+           <h1 style="color:white;">Please Select A Product</h1>
         <br> 
         <br>
         

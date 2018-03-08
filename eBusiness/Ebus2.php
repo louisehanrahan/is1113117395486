@@ -26,7 +26,7 @@ session_start();
         <br>
         <br>
         <br>
-        <h2 style="color:white;">Please enter your payment details</h2>
+        <h1 style="color:white;">Please enter your payment details</h1>
         
             <br>
             <br>
@@ -40,6 +40,8 @@ session_start();
                 <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4" required>
                 <br/>
                 <br/>
+                 <form method = "POST" action = "Ebus3.php">
+                     
                 <label for="user_name">
                     Name:
                 </label>
@@ -47,6 +49,8 @@ session_start();
                 <input type="text" id="user_name" placeholder="Name" required>
                 <br/>
                 <br/>
+                 <form method = "POST" action = "Ebus3.php">
+                     
                 <label for="user_email">
                     Email:
                 </label>
@@ -72,8 +76,8 @@ session_start();
         <?php
         //Set session variables
         $_SESSION["subtotal"] = $_POST["subtotal"];
-        $_SESSION["user_name"] = $_POST["user_name"];
-        $_SESSION["user_email"] = $_POST["user_email"];
+        $_SESSION["VAT"] = $_POST["VAT"];
+        $_SESSION["discount"] = $_POST["discount"];
         $_SESSION["total"] = $_POST["total"];
         ?>
     </div> 
