@@ -1,4 +1,5 @@
 <?php
+//Start the session
 session_start();
 ?>
 <!DOCTYPE html>
@@ -6,23 +7,30 @@ session_start();
     <head>
         <title>RECEIPT</title>
         
-        <style>
-        
-    body {
-    background-image: url("paper.jpg");
-} 
-    </style>
+    
     </head>
-   <body>
-       <h4>RECEIPT</h4>
+   <body background="desk.jpeg">
+                
+
+
+<br>
+<br>
+        <div id="receipt">
+             <h>Here is your receipt</h> 
+<br>
        
-       <?PHP
-       //Echo seesion variables that were set on previous page
-       echo "total is " . $_SESSION["total"] . ".";
-       echo "name is " . $_SESSION["name"] . ".";
-       echo "email is " . $_SESSION["email"] . ".";
-       ?>
-       
-       <a href=../homepage.html class="btn btn-success">Next</a>
+      <?php
+            //Echo session variables that were set on previous page
+            echo "Subtotal is " . $_SESSION["subtotal"]; ?>
+            <br/>
+           <?php echo "VAT is " . $_SESSION["VAT"]; ?>
+            <br/>
+           <?php echo "Discount is " . $_SESSION["discount"]; ?>
+            <br/>
+            <?php echo "Total is " . $_SESSION["total"] . "."; ?>
+        </div>   
+
    </body>
 </html>
+
+ 

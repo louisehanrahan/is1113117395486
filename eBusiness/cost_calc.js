@@ -22,8 +22,20 @@ function calcSub(){
 
   display(argSubTotal);
 }
+ argSubtotal=num
+ 
+vat_rate=.05
 
+function calculateTotal(num){ 
 
+vat = num/100*vat_rate
+
+total = num; 
+
+grandtotal = total + vat 
+
+return grandtotal; 
+}
 
 function display(parm1){
     
