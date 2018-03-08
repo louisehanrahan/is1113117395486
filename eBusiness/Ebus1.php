@@ -6,18 +6,35 @@
         <!--jQuery-->
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="cost_calc.js"></script>
+        <script src="cost_calc.js"></script>
         
+      <style>
+            
+       
+    button1{
     
+    
+    color: black;
+    
+}
+
+button{
+    
+    color: black;
+    
+}
+</style>
     </head>
     <body background="desk.jpeg">
-        <link rel="ebusstyle" href="ebusstyle.css" type="text/css">
+        
         <form method="POST" action="Ebus2.php">
             
             <br>
-           <h1 style="color:white;"><strong>Please Select A Product</strong></h>
+           <h3 style="color:white;">Please Select A Product</h3>
         <br> 
         <br>
+        
+        
         
             <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" Checked onClick="disablebtnProceed()"/>
@@ -79,11 +96,12 @@
                 
                   <button type ="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
              <br/>
-        <button1 onClick="calcSub()">Calculate Cost</button1>
-        <a role="button" href="Ebus1.php">Clear Choice</a>
-       </div>
-        </form>
         
+        <button onClick="calcSub();">Calculate Cost</button>
+        <a role="button" href="Ebus1.php">Clear Choice</a>
+        
+       
+        </form>
         
         
         

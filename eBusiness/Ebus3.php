@@ -16,16 +16,16 @@ session_start();
 <br>
 <br>
         <div id="receipt">
-             <h>Here is your receipt</h> 
+             <h2 style="color:white;">This is your receipt</h2> 
 <br>
        
       <?php
             //Echo session variables that were set on previous page
             echo "Subtotal is " . $_SESSION["subtotal"]; ?>
             <br/>
-           <?php echo "VAT is " . $_SESSION["VAT"]; ?>
+           <?php echo "Name is " . $_SESSION["user_name"]; ?>
             <br/>
-           <?php echo "Discount is " . $_SESSION["discount"]; ?>
+           <?php echo "email is " . $_SESSION["user_email"]; ?>
             <br/>
             <?php echo "Total is " . $_SESSION["total"] . "."; ?>
         </div>   
